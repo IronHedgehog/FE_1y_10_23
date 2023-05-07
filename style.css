@@ -1,3 +1,46 @@
-* {
+/* * {
   background-color: brown;
+} */
+
+.class2 {
+  background-color: aqua;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.list-item {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.hero {
+  width: 696px;
+  height: 120px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.hero__heading {
+}
+
+.hero__button {
 }
