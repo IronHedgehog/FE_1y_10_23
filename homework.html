@@ -24,25 +24,29 @@
     </style> -->
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./new.css" />
 
     <title>Document</title>
   </head>
   <body>
     <header>
       <a style="color: black" href=""><span style="color: blue">Web</span>Studio</a>
-      <nav>
+      <nav class="nav">
         <ul>
           <li class="list-item" style="background-color: green"><a href="#q">Контакти</a></li>
-          <li class="list-item"><a href="#q">Студія</a></li>
-          <li class="list-item"><a href="#w">Портфоліо</a></li>
+          <li class="list-item"><a href="#w">Студія</a></li>
+          <li class="list-item"><a href="#team">КомандаА</a></li>
+          <li class="list-item"><a href="#e">Портфоліо</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      header.header>nav.navigation>ul#nav>li.list-item*4>img[src="./style.css"]
+
       <!-- Шаблон домашки -->
 
       <!-- section - семантичний тег для групування контенту за змістом (Секція про нас, секція переваги  ) -->
-      <section class="hero">
+      <section class="hero" id="q">
         <!-- Основний заголовок сторінки (тільки один на сторінці) -->
         <h1 class="hero__heading">Ефективні рішення для вашого бізнесу</h1>
         <!-- Створення кнопки -->
@@ -51,7 +55,7 @@
         </button>
       </section>
       <!-- Шаблон домашки (Закінчився)-->
-      <section class="section1" id="q">
+      <section class="section1" id="r">
         <h2>Наша команда</h2>
         <ul class="class1">
           <li style="background-color: green" class="class2">
@@ -77,7 +81,7 @@
         </ul>
       </section>
       <section id="w">
-        <h2>Наша команда</h2>
+        <h2 id="team">Наша команда</h2>
         <ul class="class1">
           <li class="class2">
             <img src="./img.jpg" alt="" class="img" />
@@ -126,6 +130,15 @@
             <p class="p">UI Designer</p>
           </li>
         </ul>
+      </section>
+
+      <section>
+        <form action="">
+          <input type="text" placeholder="Емейл" />
+          <input type="password" placeholder="Пароль" />
+          <button type="submit">Login</button>
+          <button type="reset">Оновити форму</button>
+        </form>
       </section>
     </main>
     <footer>
