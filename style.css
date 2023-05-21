@@ -207,3 +207,11 @@ header > nav[class='nav'] {
 
   color: #757575;
 }
+
+.section-title + p + p {
+  color: red;
+}
+
+.section > p {
+  color: blue;
+}
