@@ -198,14 +198,14 @@ header > nav[class='nav'] {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 19px;
   /* identical to box height */
 
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  /* color: #757575; */
 }
 
 .section-title + p + p {
@@ -214,4 +214,82 @@ header > nav[class='nav'] {
 
 .section > p {
   color: blue;
+}
+
+body {
+  color: blueviolet;
+  font-size: 24px;
+  border: 5px dashed red;
+}
+
+header {
+  border: inherit;
+}
+
+nav {
+  border: inherit;
+}
+
+h2 {
+  color: red;
+  font-size: 50px;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+
+  background-color: red;
+}
+
+.box:hover {
+  background-color: blue;
+}
+
+.box:active {
+  background-color: green;
+}
+
+/* a:link {
+  color: brown;
+  font-size: 26px;
+} */
+
+.a {
+  color: cadetblue;
+  /* font-size: 100px; */
+}
+
+.a:visited {
+  text-decoration: underline;
+}
+
+.button:not([type='button'], [type='reset'], [type='menu']) {
+  border-radius: 50%;
+}
+.button[type='submit'] {
+  border-radius: 50%;
+}
+
+.li:nth-child(even) {
+  background-color: gold;
+}
+
+.li:nth-child(odd) {
+  background-color: green;
+}
+
+.li:nth-child(3n) {
+  background-color: blue;
+}
+
+.li:first-child {
+  background-color: tomato;
+}
+.li:last-child {
+  background-color: turquoise;
+}
+
+.box:empty {
+  background-color: lime;
 }

@@ -5,3 +5,7 @@ html {
 section {
   background-color: green;
 }
+
+a {
+  text-decoration: none;
+}
