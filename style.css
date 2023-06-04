@@ -1,3 +1,18 @@
+/* 1-й блок */
+/* #text p {
+  display: none;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .text {
   text-transform: lowercase;
   text-indent: 2%;
@@ -5,4 +20,39 @@
   word-break: normal;
   letter-spacing: 2px;
   word-spacing: 20px;
+
+  font-weight: 500;
 }
+/* 2-й блок */
+/* .text span + p {
+  display: inline;
+  text-transform: capitalize;
+} */
+
+[type='submit'] {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .text {
+  display: inline-block;
+  text-transform: uppercase;
+  text-indent: 50%;
+  white-space: nowrap;
+  word-break: keep-all;
+  letter-spacing: 20px;
+  word-spacing: 200px;
+} */
+/* НАслідування */
+/* .ul {
+  font-size: 26px;
+
+  border: 5px solid red;
+}
+
+.li {
+  border: inherit;
+} */
