@@ -1,58 +1,25 @@
-/* 1-й блок */
-/* #text p {
-  display: none;
+/* @font-face {
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Medium.ttf) format('ttf');
+  src: url(./fonts/Roboto-Bold.ttf) format('ttf');
 } */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.paragraph {
+  font-family: 'Roboto', sans-serif; /* назва шрифтифів які необхідні */
+  /* font-style: italic;  стиль шрифту( похилий або нормальний) */
+  font-size: 24px; /* розмір шрифту */
+  line-height: 34px; /* висота рядка */
+  word-spacing: 2px; /* відстань між словами  */
+  letter-spacing: 1px; /* відстань між буквами  */
+  font-weight: 100; /* жирність шрифту */
+  color: cornflowerblue; /* колір шрифту */
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+.nav-link {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: red;
 }
-
-.text {
-  text-transform: lowercase;
-  text-indent: 2%;
-  white-space: normal;
-  word-break: normal;
-  letter-spacing: 2px;
-  word-spacing: 20px;
-
-  font-weight: 500;
-}
-/* 2-й блок */
-/* .text span + p {
-  display: inline;
-  text-transform: capitalize;
-} */
-
-[type='submit'] {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* .text {
-  display: inline-block;
-  text-transform: uppercase;
-  text-indent: 50%;
-  white-space: nowrap;
-  word-break: keep-all;
-  letter-spacing: 20px;
-  word-spacing: 200px;
-} */
-/* НАслідування */
-/* .ul {
-  font-size: 26px;
-
-  border: 5px solid red;
-}
-
-.li {
-  border: inherit;
-} */
