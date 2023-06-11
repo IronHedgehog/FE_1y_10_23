@@ -1,3 +1,36 @@
+:root {
+  --accent-color: green;
+  --background-form-color: #000000;
+  --main-text: #222222;
+  --accent-color-on-form-section: #ffffff;
+  --placeholders: red;
+  --services-text: #aaa5a5;
+}
+
+p {
+  color: var(--accent-color);
+}
+
+a {
+  color: var(--placeholders);
+}
+
+h1 {
+  color: var(--main-text);
+}
+
+.red {
+  color: var(--placeholders);
+}
+
+p {
+  color: red;
+  color: var(--accent-color);
+}
+
+.red {
+}
+
 /* @font-face {
   font-family: 'Roboto';
   src: url(./fonts/Roboto-Medium.ttf) format('ttf');
