@@ -1,142 +1,6 @@
-:root {
-  --primary: #ff6464;
-  --secondary: #00a8cc;
-  --Dark: #21243d;
-}
-
-/* RESET */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* RESET END */
-
-/* MIN RESET */
-
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -155,53 +19,38 @@ img {
   height: auto;
 }
 
-/* MIN RESET END */
 p {
-  color: var(--accent-color);
+  width: 100px;
+
+  padding: 20px 15px 30px 15px; /* за часовою стрілкою починаючи з гори */
+  padding: 200px 15px; /* 1-число (відповідає за верхній та нижній, друге число за правий та лівий )  */
+  padding: 20px; /* надає заданий падінг усім сторонам */
+
+  border: 2px solid red;
+  border-radius: 0px 0px 10px 10px;
+  /* border-right: 2px;
+  border-top: 2px;
+  border-left: 2px;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: red; */
 }
 
-a {
-  color: var(--placeholders);
+.is-hidden {
+  visibility: hidden;
+  opacity: 1;
 }
 
-h1 {
-  color: var(--main-text);
+.section {
+  padding: 94px 0;
 }
 
-.red {
-  color: var(--placeholders);
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-p {
-  color: red;
-  color: var(--accent-color);
-}
-
-.red {
-}
-
-/* @font-face {
-  font-family: 'Roboto';
-  src: url(./fonts/Roboto-Medium.ttf) format('ttf');
-  src: url(./fonts/Roboto-Bold.ttf) format('ttf');
-} */
-
-.paragraph {
-  font-family: 'Roboto', sans-serif; /* назва шрифтифів які необхідні */
-  /* font-style: italic;  стиль шрифту( похилий або нормальний) */
-  font-size: 24px; /* розмір шрифту */
-  line-height: 34px; /* висота рядка */
-  word-spacing: 2px; /* відстань між словами  */
-  letter-spacing: 1px; /* відстань між буквами  */
-  font-weight: 100; /* жирність шрифту */
-  color: cornflowerblue; /* колір шрифту */
-}
-
-.nav-link {
-  font-family: 'Raleway';
-  font-style: italic;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-  color: red;
+.heading {
+  margin-bottom: 10px;
 }
