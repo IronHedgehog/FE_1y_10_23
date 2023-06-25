@@ -20,7 +20,7 @@ img {
 }
 
 p {
-  width: 100px;
+  width: 500px;
 
   padding: 20px 15px 30px 15px; /* за часовою стрілкою починаючи з гори */
   padding: 200px 15px; /* 1-число (відповідає за верхній та нижній, друге число за правий та лівий )  */
@@ -36,21 +36,60 @@ p {
   border-color: red; */
 }
 
-.is-hidden {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  outline: 0;
+  outline-offset: 0;
+
   visibility: hidden;
-  opacity: 1;
+  pointer-events: none;
 }
 
-.section {
+/* .section {
   padding: 94px 0;
-}
+} */
 
-.container {
+/* .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-}
+} */
 
 .heading {
   margin-bottom: 10px;
+}
+
+.list {
+  /* height: 100vh; */
+  display: flex;
+  /* flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; */
+}
+
+.list {
+  /* display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: repeat(4, 1fr); */
+
+  /* row-gap: 30px; */
+  /* column-gap: 30px; */
+  /* gap: 30px 50px; */
+}
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
 }
