@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 8px;
+}
+
+.sidebar {
+  flex-basis: 200px;
+}
+
+.content {
+  flex-grow: 1;
+  /* flex-shrink: ; */
+}
+
+.sidebar,
+.content {
+  height: 300px;
+  padding: 20px;
+  border: 5px dashed red;
+  border-radius: 5px;
+}

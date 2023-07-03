@@ -20,7 +20,7 @@ img {
 }
 
 p {
-  width: 500px;
+  /* width: 500px; */
 
   padding: 20px 15px 30px 15px; /* за часовою стрілкою починаючи з гори */
   padding: 200px 15px; /* 1-число (відповідає за верхній та нижній, друге число за правий та лівий )  */
@@ -73,6 +73,8 @@ p {
 .list {
   /* height: 100vh; */
   display: flex;
+  align-content: center;
+  justify-content: start;
   /* flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: center;
@@ -81,6 +83,8 @@ p {
 }
 
 .list {
+  /* flex-direction: column; */
+  height: 100vh;
   /* display: grid;
   grid-template-rows: 200px;
   grid-template-columns: repeat(4, 1fr); */
@@ -90,6 +94,36 @@ p {
   /* gap: 30px 50px; */
 }
 
+.list-item {
+  flex-basis: 5%;
+  /* max-width: 100px; */
+}
+
 .list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.listt {
+  flex-grow: 1;
+  flex-shrink: 2;
+  order: 1;
+}
+
+.b {
+  flex-grow: 2;
+  flex-shrink: 2;
+  order: 2;
+}
+
+.a {
+  flex-grow: 1;
+  flex-shrink: 6;
+  align-self: flex-start;
+  order: -1;
+}
+
+.c {
+  flex-grow: 1;
+  flex-shrink: 2;
+  order: 1;
 }

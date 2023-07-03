@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  padding: 140px 0px 70px 0px;
+}
+
+.container {
+  max-width: 900px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.hero-body {
+  display: flex;
+}
