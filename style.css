@@ -127,3 +127,50 @@ p {
   flex-shrink: 2;
   order: 1;
 }
+
+.texttt {
+  padding: 0;
+  border-width: 5px;
+  border-style: double;
+  border-color: red;
+
+  /* border: 5px dashed red; */
+}
+
+.bigtext {
+  width: 300px;
+
+  resize: none;
+
+  border: none;
+  outline: none;
+}
+
+.bigtext:hover {
+  color: red;
+}
+
+.bigtext:focus {
+  border: 5px solid red;
+  outline: green dashed 5px;
+}
+.inline-block {
+  display: inline-block;
+  margin-left: 50px;
+  padding-left: 50px;
+}
+
+.listt {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  row-gap: 50px;
+  column-gap: 30px;
+
+  /* gap: 50px 30px; */
+}
+
+/* .listt-item {
+  width: 300px;
+} */
