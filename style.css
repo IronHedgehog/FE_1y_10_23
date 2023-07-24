@@ -1,161 +1,90 @@
-:root {
-  --main-text: #000000;
-}
-
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
   box-sizing: border-box;
 }
 
-.how-its-work {
-  padding-top: 56px;
-  padding-bottom: 190px;
-}
-
-.container {
-  max-width: 1210px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.how-heading {
-  color: var(--main-text);
-  font-family: Poppins;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 36px;
-  letter-spacing: 0.1px;
-  opacity: 0.800000011920929;
-
-  text-align: center;
-
-  margin-bottom: 70px;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center; /* вирівнювання по ширині */
-  align-items: center; /* вирівнювання по висоті */
-}
-
-.flex-container:not(:last-child) {
-  margin-bottom: 108px;
-}
-
-.reverse {
-  flex-direction: row-reverse;
-}
-
-.reverse-right {
-  margin-right: 340px;
-}
-
-.img {
-  margin-right: 290px;
-}
-
-.reverse-img {
-  margin: 0;
-}
-
-.text-container {
-  max-width: 480px;
-  justify-content: flex-start;
-}
-
-.reverse-container {
-  max-width: 480px;
-}
-
-.text-heading {
-  color: #252b42;
-  /* H2 */
-  font-family: Montserrat;
+html {
   font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 57px; /* 142.5% */
-  letter-spacing: 0.2px;
-
-  margin-bottom: 30px;
 }
 
-.how-text {
-  width: 460px;
-  color: #737373;
-  font-family: Montserrat;
-  font-size: 29px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px; /* 158.333% */
-  letter-spacing: 0.2px;
+body {
+  font-size: 1rem;
+}
+input {
+  display: block;
+  width: 100%;
+  border: 10px solid red;
 }
 
-.accent {
-  color: #fa4a0c;
-  font-weight: 700;
-  line-height: 36px; /* 150% */
-  letter-spacing: 0.1px;
-  margin-bottom: 20px;
+.text-block {
+  /* font-size: 24px; */
 }
-/* order */
 
-.order {
-  padding-top: 150px;
-  padding-bottom: 130px;
-  text-align: center;
+.text {
+  /* font-size: 0.8em;
+  margin-left: -1em; */
+
+  /* font-size: 1.2rem; */
+}
+
+/* псевдоелементи */
+
+[placeholder="Email"]::placeholder {
+  color: red;
+  font-size: 10px;
+}
+
+/* .text:hover {
+  color: blue;
+  background-color: yellow;
+} */
+
+.text::selection {
+  color: blue;
+  background-color: yellow;
+}
+
+.text::first-letter {
+  font-size: 80px;
+}
+
+.text::first-line {
+  font-size: 120px;
+}
+
+.text::before {
+  content: "";
+
+  display: block;
+  width: 50px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  margin: 0 auto;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: black;
 }
 
-.order-container {
-  max-width: 840px;
-  padding: 0 15px;
+.active {
+  color: red;
+}
+
+.active:hover::after {
+  content: ""; /* обовʼязково*/
+
+  display: block;
+  width: 100%;
+  height: 5px;
+
   margin: 0 auto;
-}
 
-.order-heading {
-  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 10px;
 
-  font-family: Montserrat;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 57px;
-  letter-spacing: 0.2px;
-
-  margin-bottom: 20px;
-}
-
-.order-text {
-  color: #fff;
-  /* H4 */
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 38px; /* 158.333% */
-  letter-spacing: 0.2px;
-
-  margin-bottom: 60px;
-}
-
-.order-button {
-  width: 140px;
-  padding: 18px 31px;
-
-  border: 1px solid var(--light-background, #fff);
-  border-radius: 10px;
-  background-color: transparent;
-  color: white;
-}
-
-.order-button:not(:last-child) {
-  margin-right: 20px;
-}
-
-.order-button:hover {
-  background-color: #fa4a0c;
+  background-color: black;
 }
