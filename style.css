@@ -1,90 +1,100 @@
 * {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
+  margin: 0;
+  padding: 0;
+  border: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 40px;
+a {
+  text-decoration: none;
 }
 
-body {
-  font-size: 1rem;
+ul,
+ul {
+  list-style: none;
 }
-input {
+
+.header {
+  max-width: 1200px;
+  padding: 17px 15px 12px;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  /* width: 98px; */
+  /* height: 33px; */
+
+  color: #95e1d3;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header-nav {
+  max-height: 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 55px;
+}
+
+.nav-link {
   display: block;
-  width: 100%;
-  border: 10px solid red;
+
+  color: #95e1d3;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.text-block {
-  /* font-size: 24px; */
+.nav-link:hover {
+  color: #f38181;
 }
 
-.text {
-  /* font-size: 0.8em;
-  margin-left: -1em; */
-
-  /* font-size: 1.2rem; */
-}
-
-/* псевдоелементи */
-
-[placeholder="Email"]::placeholder {
-  color: red;
-  font-size: 10px;
-}
-
-/* .text:hover {
-  color: blue;
-  background-color: yellow;
-} */
-
-.text::selection {
-  color: blue;
-  background-color: yellow;
-}
-
-.text::first-letter {
-  font-size: 80px;
-}
-
-.text::first-line {
-  font-size: 120px;
-}
-
-.text::before {
+.nav-link:hover::after {
   content: "";
-
   display: block;
-  width: 50px;
-  height: 5px;
 
-  border-radius: 50%;
-
-  margin: 0 auto;
-
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: black;
-}
-
-.active {
-  color: red;
-}
-
-.active:hover::after {
-  content: ""; /* обовʼязково*/
-
-  display: block;
   width: 100%;
-  height: 5px;
+  height: 3px;
+  background-color: red;
+  margin-top: 10px;
+}
+
+.hero-heading::after {
+  content: "";
+  display: block;
+
+  width: 60px;
+  height: 4px;
 
   margin: 0 auto;
 
-  margin-top: 5px;
-  margin-bottom: 10px;
+  background: #f38181;
 
-  background-color: black;
+  margin-top: 40px;
+}
+
+.background {
+  height: 619px;
+
+  background-image: url(./assets/img/bcg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background: url(./assets/img/bcg.jpg) center / cover no-repeat;
 }
