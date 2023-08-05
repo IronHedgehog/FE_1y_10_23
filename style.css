@@ -106,6 +106,15 @@ ul {
 }
 
 .list-item {
+  width: 40px;
+  height: 40px;
+  padding-top: 5px;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: grey;
 }
 
 .list-item:not(:last-child) {
@@ -160,13 +169,25 @@ ul {
 }
 
 .test {
-  height: 516px;
+  height: 1000px;
   padding: 145px 0 135px;
 
   background-color: #252b42;
 
-  /* background-image: url(./order.jpg); */
-  background-position: center;
-  background-size: cover;
+  /* background-image: url(./hero.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+
+  background: url(./hero.jpg) center / cover no-repeat;
+}
+
+.envelope {
+  width: 20px;
+  height: 20px;
+
+  fill: white;
+
+  margin-right: 10px;
+  margin: 0 auto;
 }
