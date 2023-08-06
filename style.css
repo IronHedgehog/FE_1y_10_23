@@ -91,12 +91,12 @@ ul {
 .background {
   height: 619px;
 
-  background-image: url(./assets/img/bcg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(./assets/img/img.jpeg), url(./assets/img/bcg.jpg);
+  background-position: right, center;
+  background-size: 400px, cover;
+  background-repeat: repeat-x, no-repeat;
 
-  background: url(./assets/img/bcg.jpg) center / cover no-repeat;
+  /* background: url(./assets/img/bcg.jpg) center / cover no-repeat; */
 }
 
 .list {
@@ -144,6 +144,21 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: rgb(0, 16, 36);
+  background: linear-gradient(
+    153deg,
+    rgba(0, 16, 36, 1) 21%,
+    rgba(85, 9, 121, 1) 44%,
+    rgba(0, 212, 255, 1) 69%,
+    rgba(0, 212, 255, 1) 77%
+  );
+}
+
+.advantage-item {
+  -webkit-box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .advantage-item::before {
