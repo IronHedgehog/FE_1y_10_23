@@ -14,199 +14,77 @@ ul {
   list-style: none;
 }
 
-.header {
-  max-width: 1200px;
-  padding: 17px 15px 12px;
-
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-logo {
-  /* width: 98px; */
-  /* height: 33px; */
-
-  color: #95e1d3;
-  font-family: Montserrat;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.header-nav {
-  max-height: 20px;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 55px;
-}
-
-.nav-link {
-  display: block;
-
-  color: #95e1d3;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.nav-link:hover {
-  color: #f38181;
-}
-
-.nav-link:hover::after {
-  content: "";
-  display: block;
-
-  width: 100%;
-  height: 3px;
-  background-color: red;
-  margin-top: 10px;
-}
-
-.hero-heading::after {
-  content: "";
-  display: block;
-
-  width: 60px;
-  height: 4px;
-
-  margin: 0 auto;
-
-  background: #f38181;
-
-  margin-top: 40px;
-}
-
-.background {
-  height: 619px;
-
-  background-image: url(./assets/img/img.jpeg), url(./assets/img/bcg.jpg);
-  background-position: right, center;
-  background-size: 400px, cover;
-  background-repeat: repeat-x, no-repeat;
-
-  /* background: url(./assets/img/bcg.jpg) center / cover no-repeat; */
-}
-
 .list {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.list-item {
-  width: 40px;
-  height: 40px;
-  padding-top: 5px;
-  /* margin: 0 auto; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: grey;
+  /* height: 100vh; */
 }
 
 .list-item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.list-link:hover {
-  color: #2196f3;
-}
-
-.active::after {
-  content: "";
-  display: block;
-  position: absolute;
-
-  width: 45px;
-  height: 5px;
-
-  margin-top: 15px;
-
-  border-radius: 2px;
-
-  background-color: #2196f3;
-}
-
-.advantage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: rgb(0, 16, 36);
-  background: linear-gradient(
-    153deg,
-    rgba(0, 16, 36, 1) 21%,
-    rgba(85, 9, 121, 1) 44%,
-    rgba(0, 212, 255, 1) 69%,
-    rgba(0, 212, 255, 1) 77%
-  );
-}
-
-.advantage-item {
-  -webkit-box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-.advantage-item::before {
-  content: "";
-  display: block;
-
-  width: 270px;
-  height: 120px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border-radius: 4px;
-  background-color: #f5f4fa;
-}
-
-.antena::before {
-  background-image: url(./antena.svg);
-}
-
-.advantage-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.test {
-  height: 1000px;
-  padding: 145px 0 135px;
-
-  background-color: #252b42;
-
-  /* background-image: url(./hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-
-  background: url(./hero.jpg) center / cover no-repeat;
+.box {
+  width: 200px;
+  height: 200px;
 }
 
-.envelope {
-  width: 20px;
-  height: 20px;
-
-  fill: white;
-
-  margin-right: 10px;
-  margin: 0 auto;
+.green {
+  background-color: green;
+  -webkit-box-shadow: inset 13px -19px 34px 23px rgba(41, 120, 173, 1);
+  -moz-box-shadow: inset 13px -19px 34px 23px rgba(41, 120, 173, 1);
+  box-shadow: inset 13px -19px 34px 23px rgba(41, 120, 173, 1);
 }
 
+.yellow {
+  background-color: yellow;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.black {
+  background-color: black;
+}
+
+.li-1 {
+  order: 5;
+  align-self: flex-start;
+}
+
+.li-2 {
+  order: 3;
+  align-self: flex-end;
+}
+.li-5 {
+  order: -1;
+  align-self: auto;
+}
+
+.asd {
+  width: 50%;
+}
+
+.list-item:nth-child(even) {
+  color: white;
+}
+/* 
+.list {
+  background: linear-gradient(
+    153deg,
+    rgba(0, 16, 36, 1) 21%,
+    rgba(102, 121, 9, 1) 40%,
+    rgba(1, 0, 255, 1) 69%,
+    rgba(234, 255, 0, 1) 77%
+  );
+  background-image: url(./assets/img/bcg.jpg), url(./assets/img/bcg.jpg);
+} */
 /* 
   order
   %
