@@ -206,3 +206,13 @@ ul {
   margin-right: 10px;
   margin: 0 auto;
 }
+
+/* 
+  order
+  %
+  nth-child(n+2)
+  cлої бекграунду
+  шикує в ряд колонками однієї висоти, рівнозначній висоті контейнера - флекс
+  align-self
+  align-items
+*/
