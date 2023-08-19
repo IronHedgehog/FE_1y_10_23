@@ -1,96 +1,32 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap");
+
+/* @font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins/Poppins-Regular.ttf) format("ttf");
+  src: url(./assets/fonts/Poppins/Poppins-Medium.ttf) format("ttf");
+  src: url(./assets/fonts/Poppins/Poppins-SemiBold.ttf) format("ttf");
 }
 
-a {
-  text-decoration: none;
-}
-
-ul,
-ul {
-  list-style: none;
-}
-
-.list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
-}
-
-.list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.box {
-  width: 200px;
-  height: 200px;
-}
-
-.green {
-  background-color: green;
-  -webkit-box-shadow: inset 13px -19px 34px 23px rgba(41, 120, 173, 1);
-  -moz-box-shadow: inset 13px -19px 34px 23px rgba(41, 120, 173, 1);
-  box-shadow: inset 13px -19px 34px 23px rgba(41, 120, 173, 1);
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.violet {
-  background-color: violet;
-}
-
-.grey {
-  background-color: grey;
-}
-
-.black {
-  background-color: black;
-}
-
-.li-1 {
-  order: 5;
-  align-self: flex-start;
-}
-
-.li-2 {
-  order: 3;
-  align-self: flex-end;
-}
-.li-5 {
-  order: -1;
-  align-self: auto;
-}
-
-.asd {
-  width: 50%;
-}
-
-.list-item:nth-child(even) {
-  color: white;
-}
-/* 
-.list {
-  background: linear-gradient(
-    153deg,
-    rgba(0, 16, 36, 1) 21%,
-    rgba(102, 121, 9, 1) 40%,
-    rgba(1, 0, 255, 1) 69%,
-    rgba(234, 255, 0, 1) 77%
-  );
-  background-image: url(./assets/img/bcg.jpg), url(./assets/img/bcg.jpg);
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto/Roboto-Regular.ttf) format("ttf");
 } */
-/* 
-  order
-  %
-  nth-child(n+2)
-  cлої бекграунду
-  шикує в ряд колонками однієї висоти, рівнозначній висоті контейнера - флекс
-  align-self
-  align-items
-*/
+
+.roboto {
+  /* color: rgba(255, 255, 255, 0.78); */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 214.286% */
+  letter-spacing: 0.21px;
+}
+
+.poppins {
+  /* color: rgba(255, 255, 255, 0.55); */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+}
