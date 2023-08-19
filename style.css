@@ -30,3 +30,48 @@
   font-weight: 500;
   line-height: 30px; /* 166.667% */
 }
+
+.container {
+  width: 1070px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.slogan {
+  padding-top: 70px;
+  padding-bottom: 140px;
+  background: url(./assets/imgs/Rectangle\ 8.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+
+.p {
+  color: #0a3853;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p1 {
+  color: #0a3853;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p2 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
