@@ -1,3 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+/* font-family: Raleway;  */
+/* font-weight: 700; */
+/* font-family: Roboto; */
+/* font-weight:400 500 700 900;  */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap");
 
 /* @font-face {
@@ -74,4 +103,48 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.div {
+  /* background-color: green;
+  width: 300px;
+  height: 300px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%); */
+
+  /* margin: 0 auto; */
+}
+
+.containerr {
+  /* display: flex;
+  justify-content: center; */
+}
+
+.svg {
+  width: 64px;
+  height: 64px;
+}
+
+.use {
+  width: 64px;
+  height: 64px;
+}
+
+.swiper-button-next:after {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
+  color: grey;
+}
+
+.swiper-pagination-bullet {
+  width: 30px;
+  margin-right: 30px !important;
 }
