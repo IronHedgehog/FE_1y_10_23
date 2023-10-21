@@ -153,27 +153,90 @@ ul {
   overflow: auto;
 }
 
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9fd;
+  color: #2a2a2a;
+  height: 100000px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
 .section-title {
   position: sticky;
-  top: 0px;
+  top: -1px;
 
-  background-color: red;
-
+  margin: 0;
+  padding: 16px;
+  background-color: #ccc;
   text-align: center;
   text-transform: uppercase;
+
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.section-text {
+  font-size: 18px;
+  margin-bottom: 0;
 }
 
 .section:nth-child(1) .section-title {
   color: #fff;
-  background-color: yellow;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
 }
 
 .section:nth-child(2) .section-title {
-  color: #fff;
-  background-color: blue;
+  background-image: repeating-linear-gradient(
+    to right,
+    #f6ba52,
+    #f6ba52 10px,
+    #ffd180 10px,
+    #ffd180 20px
+  );
 }
 
 .section:nth-child(3) .section-title {
   color: #fff;
-  background-color: green;
+  background-image: repeating-radial-gradient(
+    circle,
+    purple,
+    purple 10px,
+    #4b026f 10px,
+    #4b026f 20px
+  );
 }
+
+.section:nth-child(4) .section-title {
+  color: #fff;
+  background-image: repeating-linear-gradient(
+    to right,
+    #ff8a00,
+    #ff8a00 10px,
+    #e52e71 10px,
+    #e52e71 20px
+  );
+}
+
+.divvv {
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+}
+
+.pppp {
+  width: 1000px;
+  height: 1000px;
+}
+
+/* scroll-bar */
