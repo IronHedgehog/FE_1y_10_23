@@ -12,6 +12,7 @@ ol {
 
 body {
   height: 10000px;
+  background-color: grey;
 }
 .backdrop {
   position: fixed;
