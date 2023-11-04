@@ -11,34 +11,68 @@ ol {
 }
 
 body {
-  height: 10000px;
-  background-color: grey;
-}
-.backdrop {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
+  height: 100vh;
+  background-color: black;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-.backdrop.is-hidden {
-  /* background-color: rgba(0, 0, 0, 0); */
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal {
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: green;
   position: absolute;
-  left: 50%;
   top: 50%;
-  width: 528px;
-  height: 581px;
-  background-color: blue;
+  left: 50%;
   transform: translate(-50%, -50%);
+  /* Властивість яка вказує на те ,яку властивість елемента ми бажаємо анімувати */
+  /* transition-property: background-color, transform; */
+  /* transition-property: all; */
+  /* Тривалість анімації */
+  /* transition-duration: 5s; */
+  /* 500ms = 0.5s */
+  /* властивість яка дозволяє вказати поведінку елементу у просторі під час руху з точки А в точку В */
+  /* transition-timing-function: cubic-bezier(0.17, 1.71, 0.86, -1.05); */
+  /* linear ease-in  ease-out */
+  /* затримка перед css переходом */
+  /* transition-delay: 2s; */
+
+  /* transition-property  transition-duration  transition-timing-function transition-delay(не обовʼязковий)*/
+  transition: background-color 5s cubic-bezier(0.17, 1.71, 0.86, -1.05) 2s,
+    transform 5s cubic-bezier(0.17, 1.71, 0.86, -1.05) 2s,
+    width 5s cubic-bezier(0.17, 1.71, 0.86, -1.05) 2s;
 }
+
+.box:hover {
+  background-color: coral;
+  transform: translate(-30%, -30%);
+  width: 400px;
+}
+
+.boxx {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  /* transform: translate(-30%, -30%); */
+  /* scale - дозволяє масштабувати елемент(збільшити або зменшити) (х - ширини,y-довжина ) */
+  /* transform: scale(-0.5, -2); */
+  /*дозволяє обертати елемент на певну кількість градусів (градус = deg) */
+  /* transform: rotate(90deg); */
+  transform: skew(5deg, 8deg);
+}
+
+/* :hover
+:active
+:focus */
+
+/* animation: 3s linear 1s infinite alternate slidein; */
+/* @keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+} */
