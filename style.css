@@ -53,15 +53,28 @@ body {
   background-color: yellow;
   position: absolute;
   top: 30%;
-  left: 30%;
+  right: 30%;
+
+  /* right = доадатнє значення в translate left = відʼємно */
+
+  /* bottom = доадатнє значення в translate top = відʼємно */
+
+  /* transform: translate(30%, -30%); */
   /* transform: translate(-30%, -30%); */
   /* scale - дозволяє масштабувати елемент(збільшити або зменшити) (х - ширини,y-довжина ) */
-  /* transform: scale(-0.5, -2); */
+  /* transform: scale(1, 1); */
   /*дозволяє обертати елемент на певну кількість градусів (градус = deg) */
-  /* transform: rotate(90deg); */
-  transform: skew(5deg, 8deg);
+  /* transform: perspective(400px) rotateX(120deg); */
+  transform: perspective(400px) skew(10deg, 10deg);
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-delay: 2s;
 }
 
+.boxx:hover {
+}
 /* :hover
 :active
 :focus */
@@ -76,3 +89,10 @@ body {
     transform: translateX(100%);
   }
 } */
+
+/* Завдання 1. Анімувати css-переходи всюди, де є ховери з макету WebStudio: 
+- для всіх ефектів ховер і фокуса (колір, фон, тінь) зроблені переходи;
+
+
+
+- у переходах та анімаціях явно зазначені анімовані властивості. Ніде немає значення all; */
