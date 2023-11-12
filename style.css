@@ -14,7 +14,7 @@ body {
   height: 10000px;
   /* background-color: ; */
 }
-.backdrop {
+/* .backdrop {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -22,6 +22,9 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s cubic-bezier(0.83, -0.08, 0.32, 1) 1s,
+    visibility 0.5s cubic-bezier(0.83, -0.08, 0.32, 1) 1s;
 }
 
 .no-scroll {
@@ -31,6 +34,13 @@ body {
   /* background-color: rgba(0, 0, 0, 0); */
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+} */
+
+/* css-перехід модалки */
+/* .backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s cubic-bezier(0.83, -0.08, 0.32, 1) 0.3s;
 }
 
 .modal {
@@ -40,8 +50,11 @@ body {
   width: 528px;
   height: 581px;
   background-color: blue;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: opacity 0.5s cubic-bezier(0.83, -0.08, 0.32, 1) 0.3s,
+    transform 0.5s cubic-bezier(0.83, -0.08, 0.32, 1) 0.3s;
+} */
 
 /* https://github.com/IronHedgehog/FE_1y_10_23/blob/modal/style.css */
 
@@ -92,7 +105,7 @@ a {
   transition-timing-function: ease-in-out;
   transition-delay: 1s; */
 
-  transform: translateX(-100%);
+  transform: translateX(100%);
 
   transition-property: transform;
   transition-duration: 300ms;
@@ -135,7 +148,7 @@ a {
 
   transition-property: background-image;
   transition-duration: 1s;
-  transition-timing-function: ease-out;
+  transition-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
   /* background-size: cover; */
 }
 
@@ -144,10 +157,58 @@ a {
 }
 
 .button:hover {
-  background: linear-gradient(
-    110deg,
-    rgba(186, 194, 77, 0.8562018557422969) 40%,
-    rgba(0, 127, 255, 0.5844931722689075) 80%
-  );
+  background: black;
   color: darkmagenta;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  height: 10000px;
+  background-color: grey;
+}
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+.backdrop.is-hidden {
+  /* background-color: rgba(0, 0, 0, 0); */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: blue;
+  transform: translate(-50%, -50%);
+}
+
+
+.el{
+  margin-top: 1000px;
 }

@@ -3,27 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul class="list">
-          <li class="list-item"><a href="" class="list-link">Студія</a></li>
-          <li class="list-item"><a href="" class="list-link">Портфоліо</a></li>
-          <li class="list-item"><a href="" class="list-link">Контакти</a></li>
-        </ul>
-      </nav>
-    </header>
+    <footer>
+      <button class="btn-open" data-modal-open>Відкрити модалку</button>
 
-    <button class="button">Click me</button>
-    <!-- <button class="btn-open" data-modal-open>Відкрити модалку</button>
+      <div class="animate__animated animate__swing">asdasdasd</div>
+
+      <div class="el" data-aos="flip-up">
+        data-aos="fade-down"data-aos="fade-down"data-aos="fade-down"data-aos="fade-down"data-aos="fade-down"data-aos="fade-down"data-aos="fade-down"data-aos="fade-down"data-aos="fade-down"data-aos="fade-down"data-aos="fade-down"
+      </div>
+    </footer>
+
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal animate__animated animate__backInUp">
         <button class="button" data-modal-close>Close</button>
+        <header>
+          <nav>
+            <ul class="list">
+              <li class="list-item"><a href="" class="list-link">Студія</a></li>
+              <li class="list-item"><a href="" class="list-link">Портфоліо</a></li>
+              <li class="list-item"><a href="" class="list-link">Контакти</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <button class="button">Click me</button>
       </div>
     </div>
-    <script src="./modal.js"></script> -->
+    <script src="./modal.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
