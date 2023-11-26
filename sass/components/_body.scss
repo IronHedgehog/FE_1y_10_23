@@ -1,0 +1,10 @@
+body {
+  height: 1000px;
+  width: 1000px;
+  background-color: red;
+  font-size: 1000000px;
+  color: white;
+  &:hover {
+    background-color: aqua;
+  }
+}

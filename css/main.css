@@ -1,3 +1,24 @@
+:root {
+  --main-color: black;
+  --accent-color: blue;
+  --svg--color: yellow;
+  --svg-hover-color: green;
+}
+
+.hero {
+  padding: 100px;
+}
+
+.hero-heading {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.team {
+  padding: 111px;
+}
+
 body {
   height: 1000px;
   width: 1000px;
@@ -24,4 +45,14 @@ div::after {
 }
 div:not(:last-child) {
   margin: 10px;
+}
+div::-moz-selection {
+  background-color: yellow;
+}
+div::selection {
+  background-color: yellow;
+}
+
+.p {
+  color: chocolate;
 }
