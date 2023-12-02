@@ -5,6 +5,19 @@
   --svg-hover-color: green;
 }
 
+.button {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 .hero {
   padding: 100px;
 }
@@ -17,17 +30,6 @@
 
 .team {
   padding: 111px;
-}
-
-body {
-  height: 1000px;
-  width: 1000px;
-  background-color: red;
-  font-size: 1000000px;
-  color: white;
-}
-body:hover {
-  background-color: aqua;
 }
 
 div {
@@ -55,4 +57,9 @@ div::selection {
 
 .p {
   color: chocolate;
+}
+
+.button {
+  background-color: orange;
+  color: grey;
 }
