@@ -7,3 +7,17 @@
   text-transform: uppercase;
   color: var(--main-color);
 }
+
+.error {
+  @extend %buttons;
+  background-color: red;
+}
+
+.hero {
+  // @include = директива для використання міксинів
+  // border =  назва міксину який вкористовуємо
+  //() =  Передаємо значення яке бажаємо побачити на екрані змінної $border у міксині border
+  @include bordered(5px solid red, 20px);
+  width: 100%;
+  height: 600px;
+}

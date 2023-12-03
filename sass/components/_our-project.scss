@@ -1,0 +1,6 @@
+.friends-list {
+  @include flex();
+}
+.friends-item {
+  @include geometry(100px);
+}

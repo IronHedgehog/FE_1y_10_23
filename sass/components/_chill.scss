@@ -7,3 +7,9 @@
 
 // .friends-link {
 // }
+
+.warning {
+  @extend %buttons;
+  background-color: orange;
+  color: $color;
+}

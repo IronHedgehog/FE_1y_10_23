@@ -4,8 +4,12 @@
   --svg--color: yellow;
   --svg-hover-color: green;
 }
+// глобальна область бачимості = Змінна не обмежена фігурними дужками
+$color: red;
 
 $button-text: grey;
+
+$third-text: black;
 
 $third-text-color: red;
 $second-text-color: violet;
