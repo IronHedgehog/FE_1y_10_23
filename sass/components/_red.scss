@@ -1,0 +1,58 @@
+.red {
+  width: 280px;
+  background-color: red;
+  height: 500px;
+
+  // @media = деректива яка дозволяє нам оголосити медіа правило для адаптації нашого сайту
+
+  // screen = перевіряє чи запускається наш сайт на кольоровому екрані
+
+  // print = дозволяє зроби адаптацію під принтер факс тошо
+
+  //  логічний операто І(and) вказує на те що ми використовуємо декілька  перевірки для приєднання стилів
+
+  //(min-width: 320px)=мінімальна ширина = ми вказуємо мінімальну ширину екрану на якій мають з'явитись стилі які ми запишемо у цьому правилі
+
+  // Такий вид адаптації називають АДАПТИВНИЙ тому що він breakpoint(точки зламу) змінюється під певний вид девайса
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    height: 200px;
+    background-color: gray;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1100px;
+    height: 100px;
+    background-color: gold;
+  }
+}
+
+//  mobile-first = стилі для Сайту спочатку роблять для телефона
+
+// desktop-first = Стилі для сайту роблять спочатку для PC
+
+.yellow {
+  width: 450px;
+  height: 120px;
+
+  display: none;
+
+  border-radius: 4px;
+  background: yellow;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    display: block;
+  }
+}
+
+// display:none
+
+// @media screen and (min-width: 1200px) {
+//   display: block;
+// }
