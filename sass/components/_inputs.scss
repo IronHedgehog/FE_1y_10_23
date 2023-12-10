@@ -1,0 +1,24 @@
+.input:focus {
+  background-color: aqua;
+  color: red;
+  outline: none;
+  border: none;
+
+  padding-left: 40px;
+  //   position: relative;
+}
+
+.svg-wrapper {
+  position: relative;
+}
+
+.svg {
+  position: absolute;
+
+  left: 20px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  fill: red;
+  stroke: yellow;
+}
