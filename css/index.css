@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .red {
   width: 280px;
   background-color: red;
@@ -25,16 +31,21 @@
   border-radius: 4px;
   background: yellow;
 }
-
 @media screen and (min-width: 768px) {
   .yellow {
     width: 354px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .yellow {
     width: 270px;
     display: block;
   }
+}
+
+.divvv {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: tomato;
 }
