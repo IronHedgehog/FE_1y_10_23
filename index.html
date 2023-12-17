@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- meta теги = тег який відповідає за налаштування браузеру (Пояснення для браузера шо ми йому даем і шо ми від нього хочем).-->
-
-    <!-- UTF-8 = сучасне кодування символів (Запобігання квадратикам)-->
     <meta charset="UTF-8" />
-    <!-- v = viewport =  обовʼязковий мета тег без якого адекватна адптація неможлива -->
-    <!--content = каже браузеру про те як правильно підбирати ширини екранів  -->
-    <!-- У мобільних браузерах за замовчуванням вьюпорт = 970px щоб цього запобігти використовуєм мета тег  -->
-    <!--  width=device-width = встановлює ширину вьюпорту, що дорівнює фізичній велечині екрану пристрою -->
-    <!-- initial-scale=1.0 = це означає, співвідношення пікселів  -->
-    <!-- СSS ПІКСЕЛІ -->
-    <!-- СПРАВЖНІ ПІКСЕЛІ -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="divvv"></div>
-    <div class="red"></div>
-    <div class="yellow"></div>
-    <div style="background-color: green; max-width: 1600px; height: 500px"></div>
+    <header class="header">
+      <!-- <button></button>
+      <button></button> -->
+      <a class="nav-buttons" href="">Log in</a>
+      <a class="nav-buttons" href="">Sign up</a>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero-upperHeading">URLAUBSGLÜCK</h2>
+          <h1 class="hiro-heading">Share your holiday dreams</h1>
+          <p class="hero-text">And find the perfect partnerto fullfill it</p>
+          <button class="hero-button">Find your holiday partner</button>
+        </div>
+      </section>
+      <section class="meet">
+        <h2 class="meet-heading">Meet a partner for your best holiday</h2>
+        <ul class="meet-list">
+          <li class="meet-item">
+            <img src="./assets/imgs/firstMeet.png" alt="" class="meet-img" />
+            <h3 class="meet-underheading">Bradley Hunter</h3>
+            <p class="meet-text">Based in Chicago. I love playing tennis and loud music.</p>
+          </li>
+          <li class="meet-item">
+            <img src="./assets/imgs/secondMeet.png" alt="" class="meet-img" />
+            <h3 class="meet-underheading">Lucas Marsha</h3>
+            <p class="meet-text">
+              I get my inspiration from nature and objects around me. I have a passion to colours,
+              typography and skateboards.
+            </p>
+          </li>
+          <li class="meet-item">
+            <img src="./assets/imgs/thirdMeet.png" alt="" class="meet-img" />
+            <h3 class="meet-underheading">Heather Walker</h3>
+            <p class="meet-text">I'm a happy person that loves cats and climbing on mountains.</p>
+          </li>
+          <li class="meet-item">
+            <img src="./assets/imgs/fourMeet.png" alt="" class="meet-img" />
+            <h3 class="meet-underheading">Bradley Hunter</h3>
+            <p class="meet-text">Based in Chicago. I love playing tennis and loud music.</p>
+          </li>
+        </ul>
+        <button class="meet-button">See other partners</button>
+      </section>
+    </main>
   </body>
 </html>
