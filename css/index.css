@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.header-buttons {
+  width: 83px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 13.986px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-buttons:last-child {
+  width: 92px;
+  height: 39px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+}
+
+.container {
+  width: 280px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 670px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 940px;
+  }
+}
+
+.hero {
+  padding-top: 170px;
+  padding-bottom: 135px;
+  background-image: url(../../assets/imgs/hero/heroBackground.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-upperHeading {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.hero-heading {
+  width: 306.026px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 30.041px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: -27px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .hero-heading {
+    margin-left: 0px;
+    width: 507px;
+    font-size: 52px;
+    margin: 0 auto;
+  }
+}
+
+.hero-text {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18.025px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 17px;
+}
+
+.hero-button {
+  width: 282px;
+  height: 43px;
+  background-color: #ff4e50;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 13.999px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  outline: none;
+  border: none;
+  margin-left: -15px;
+}
