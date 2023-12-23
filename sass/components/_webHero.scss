@@ -1,0 +1,89 @@
+.hero {
+  // відступ зверху та знизу - 118px, зліва та справа - 0px
+  padding: 118px 0;
+
+  background-color: rgba(47, 48, 58, 0.4);
+  // Додаєм картинку заднього фону
+  background-image: url(../../assets/imgs/WebStudio/hero/hero-mobile.webp);
+  // забороняє повторення картинки
+  background-repeat: no-repeat;
+  // позиціонує наш елемент в данному випадку по середині
+  background-position: center;
+  // визначає розмір картинки - cover - суть якого у тому щоб розтягнути картинку на весь екран
+  background-size: cover;
+  // screen = перевірка на кольоровий екран
+  // and логичний оператор И
+  // min-width: 768px = Означає що з 768px підʼєднаються усі стилі які ви напишите у середені медіа правила
+  @media screen and (min-width: 768px) {
+    // В МЕДІА ПРАВИЛАХ ТРЕБА ЗАПИСУАВТИ ЛИШЕ ТІ СТИЛІ ЯКІ ЗМІНЮЮТЬСЯ (НЕ ТРЕБА ДУБЛЮВАТИ ЗАЙВИЙ КОД )
+    background-image: url(../../assets/imgs/WebStudio/hero/hero-tablet.webp);
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    background-image: url(../../assets/imgs/WebStudio/hero/hero-desktop.webp);
+  }
+}
+
+.container {
+  // Означає максимальну ширину до якої елемент з данним селектором може розширитись
+  // Використовуються для responsive(гнучкої) верстки
+  // max-width: 480px;
+  // min-width: ;
+
+  // ------------------------------------------------------
+
+  // Найжирніша секція за розміром з макету + 15px (рекомендований)відступ від країв зліва та + 15 px відступ від країв справа
+  width: 480px;
+  // внутрішні відступи,які відповідають за відступи по бокам(рекомендоване значення 15px )
+  padding: 0 15px;
+  // центрування контенту
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 738px + 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px + 30px;
+  }
+}
+
+.hero-heading {
+  // margin-bottom: 30px;
+  // 0 відступ зверху, auto - відступ зліва та справа, 30px відступ знизу.
+  margin: 0 auto 30px;
+
+  width: 360px;
+
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 42px;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+  }
+}
+
+.hero-button {
+  display: block;
+  margin: 0 auto;
+
+  width: 200px;
+  height: 50px;
+
+  // border = кордон
+  border: none;
+  // outline = обводка(зазвичай бачимо їй при стані :focus)
+  outline: none;
+
+  border-radius: 4px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
