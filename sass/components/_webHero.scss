@@ -87,3 +87,23 @@
   background-color: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
+.nav-item {
+  border-bottom: 1px solid tomato;
+
+  padding-bottom: 15px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.container {
+  width: 860px + 30px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
