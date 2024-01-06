@@ -6,5 +6,39 @@
     <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container flex">
+        <a class="header-logo" href=""><img src="./assets/imgs/header/logo.webp" alt="logo" /></a>
+
+        <button class="header-button-menu">
+          <svg class="header-icon-menu">
+            <use href="./assets/imgs/sprite.svg#burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu">
+        <button class="mob-menu-close-buutton">
+          <svg class="mobile-menu-close">
+            <use href="./assets/imgs/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <button class="mobile-menu-buynow">
+          <p class="button-text">Buy now</p>
+          <svg class="mobile-menu-arrow">
+            <use href="./assets/imgs/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list">
+          <li class="mobile-menu-item"><a href="" class="mobile-menu-link">Home</a></li>
+          <li class="mobile-menu-item"><a href="" class="mobile-menu-link">About us</a></li>
+          <li class="mobile-menu-item"><a href="" class="mobile-menu-link">How it’s made?</a></li>
+          <li class="mobile-menu-item"><a href="" class="mobile-menu-link">Our products</a></li>
+          <li class="mobile-menu-item"><a href="" class="mobile-menu-link">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <script src="./js.js"></script>
+  </body>
 </html>

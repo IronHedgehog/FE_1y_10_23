@@ -1,0 +1,55 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: $mobile-background;
+}
+
+.mob-menu-close-buutton {
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  width: 14px;
+  height: 14px;
+}
+
+.mobile-menu-close {
+  stroke: $svg-close;
+  width: 14px;
+  height: 14px;
+}
+
+.mobile-menu-buynow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 209px;
+  height: 44px;
+
+  border-radius: 22px;
+  background: $svg-close;
+}
+
+.button-text {
+  color: $accent-color;
+
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-right: 15px;
+}
+
+.mobile-menu-arrow {
+  stroke: $accent-color;
+  fill: transparent;
+  width: 10px;
+  height: 15px;
+}

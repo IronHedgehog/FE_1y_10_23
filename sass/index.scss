@@ -3,8 +3,6 @@
 @import './utils/placeholders';
 @import './utils/mixin';
 
-@import './base/base';
-
+@import './base/container';
 @import './components/header';
-@import './components/container';
-@import './components/hero'; // mobile-first = спочатку має записать стилі для мобільного девайсу(телефони або портативні пристрої займають 70%(песемістичний варіант) інтернет мережі)
+@import './components/mob-menu.scss';
