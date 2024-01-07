@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
   </head>
@@ -11,14 +15,14 @@
       <div class="container flex">
         <a class="header-logo" href=""><img src="./assets/imgs/header/logo.webp" alt="logo" /></a>
 
-        <button class="header-button-menu">
+        <button class="mob-menu__button--open">
           <svg class="header-icon-menu">
             <use href="./assets/imgs/sprite.svg#burger"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
-        <button class="mob-menu-close-buutton">
+      <div class="mob-menu is-hidden">
+        <button class="mob-menu__button--close">
           <svg class="mobile-menu-close">
             <use href="./assets/imgs/sprite.svg#close"></use>
           </svg>
@@ -39,6 +43,6 @@
       </div>
     </header>
 
-    <script src="./js.js"></script>
+    <script src="./js/mobileMenu.js"></script>
   </body>
 </html>

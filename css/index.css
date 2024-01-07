@@ -45,12 +45,13 @@ body {
   height: 12px;
 }
 
-.header-button-menu {
+.mob-menu__button--open {
   width: 20px;
   height: 12px;
   background-color: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .mob-menu {
@@ -59,16 +60,28 @@ body {
   right: 0;
   width: 250px;
   height: 100vh;
+  padding: 27px 20px 0px 20px;
   background-color: #e17992;
+  transform: translate(0);
+  transition: transform 350ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.mob-menu-close-buutton {
+.mob-menu.is-hidden {
+  transform: translate(100%);
+  transition: transform 350ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.mob-menu__button--close {
+  display: block;
+  margin-left: 185px;
+  margin-bottom: 23px;
   background-color: transparent;
   border-radius: 50%;
   border: none;
   outline: none;
   width: 14px;
   height: 14px;
+  cursor: pointer;
 }
 
 .mobile-menu-close {
@@ -76,15 +89,28 @@ body {
   width: 14px;
   height: 14px;
 }
+.mobile-menu-close:hover, .mobile-menu-close:active {
+  stroke: #d41443;
+}
 
 .mobile-menu-buynow {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
   width: 209px;
   height: 44px;
   border-radius: 22px;
   background: white;
+}
+.mobile-menu-buynow:hover, .mobile-menu-buynow:active {
+  background-color: #d41443;
+}
+.mobile-menu-buynow:hover .button-text, .mobile-menu-buynow:active .button-text {
+  color: white;
+}
+.mobile-menu-buynow:hover .mobile-menu-arrow, .mobile-menu-buynow:active .mobile-menu-arrow {
+  stroke: white;
 }
 
 .button-text {
@@ -103,4 +129,41 @@ body {
   fill: transparent;
   width: 10px;
   height: 15px;
+}
+
+.mobile-menu-item {
+  position: relative;
+}
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 23px;
+}
+.mobile-menu-item::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 1px;
+  top: -13px;
+  left: -20px;
+  background-color: #e18298;
+}
+.mobile-menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: -20px;
+  width: 250px;
+  height: 1px;
+  background-color: #e18298;
+}
+
+.mobile-menu-link {
+  color: white;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mobile-menu-link:hover, .mobile-menu-link:active {
+  color: #d41443;
 }
