@@ -1,8 +1,7 @@
 @import './utils/vars';
 @import './utils/reset';
-@import './utils/placeholders';
-@import './utils/mixin';
 
-@import './base/base';
-@import './components/header';
-@import './components/mob-menu.scss';
+@import './components/index/header';
+@import './components/index/hero';
+// SPA - Лендінги
+// MPA - багатосторінкові сайти
