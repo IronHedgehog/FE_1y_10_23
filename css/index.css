@@ -15,9 +15,27 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
 body {
   scroll-behavior: smooth;
+}
+
+.hero {
+  width: 100vw;
+  height: 700px;
+  background-image: url(../../assets/imgs/hero/hero.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../assets/imgs/hero/hero-2x.webp);
+    background-size: cover;
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .hero {
+    background-image: url(../../assets/imgs/hero/hero-3x.webp);
+  }
 }

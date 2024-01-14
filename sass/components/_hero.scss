@@ -1,0 +1,19 @@
+.hero {
+  width: 100vw;
+  height: 700px;
+  //   background-image: url(../../assets/imgs/hero/hero.webp);
+
+  background-image: url(../../assets/imgs/hero/hero.webp);
+  // мінімальний DPR  при якому має підʼєднатись картинка
+  //   dpi = кількість фізичних пікселів на дюйм екрану.
+  //   dppx = кількість фізичних пікселів в одному css- пікселі
+  //   всі ці перевірки слугують одній меті = вказати що наступні стилі для 2x моніторів
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../../assets/imgs/hero/hero-2x.webp);
+    background-size: cover;
+  }
+  //   //   всі ці перевірки слугують одній меті = вказати що наступні стилі для 3x моніторів
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: url(../../assets/imgs/hero/hero-3x.webp);
+  }
+}
