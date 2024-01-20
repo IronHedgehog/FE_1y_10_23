@@ -2,74 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- viewport - область перегляду -->
+    <!-- width - ширина -->
+    <!-- height - висота -->
+    <!-- vw - viewport width -ширина області перегляду-->
+    <!-- vh - viewport height - висота області перегляду -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a class="link active" href="">Студія</a></li>
-          <li><a class="link" href="">Портфоліо</a></li>
-          <li><a class="link" href="">Контакти</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="hero">
-      <div>
-        <div></div>
-      </div>
-    </section>
-    <picture> </picture>
-    <!-- <img src="./assets/imgs/team/1x/work3.webp" alt="" />
-    <img src="./assets/imgs/team/2x/work3.webp" alt="" width="270" height="260" />
-    <img src="./assets/imgs/team/3x/work3.webp" alt="" width="270" height="260" /> -->
-    <!-- srcset = завжди приймає однакові зображення, навіть якщо ви додасте різні зображення він буде вважати що це одні й тіж зображення -->
-    <!-- 270w,3000w = дескриптор = значення яке пояснює браузеру коли вантажити ту чи іншу картинку з вказаних вами у srcset -->
-
-    <!-- sizes - працює тільки  в разі використання w-  дескриптора, якщо є w то sizes обов'язковий-->
-    <!-- sizes - вказуємо розмір екрану на якому має відмалюватись це зображення. Приймає будь-які одиниці вимірювання -->
-
-    <!-- 1x 2x 3x  w - width - ширина картинки-->
-
-    <!-- <img
-      srcset="
-        ./assets/imgs/team/work3.webp    1x,
-        ./assets/imgs/team/work3-2x.webp 2x,
-        ./assets/imgs/team/work3-3x.webp 3x
-      "
-      src="./assets/imgs/team/work3.webp"
-      alt="Робітник"
-    /> -->
-
-    <!-- <img
-      srcset="
-        ./assets/imgs/team/work3.webp     300w,
-        ./assets/imgs/team/work3-2x.webp  600w,
-        ./assets/imgs/team/work3-3x.webp  900w,
-        ./assets/imgs/team/work3.webp    1200w
-      "
-      sizes="(min-width:900px) 600px, (min-width:600px) 300px,100vw"
-      src="photo-300.jpg"
-      alt="Опис зображення для всіх версій"
-    /> -->
-
-    <!-- picture - контейнер для  тегів source,  в тегах source можна перерахувати можливі варіанти картинок -->
-    <!-- якщо жоден source під умови браузера не підійшов він завантажить картинку з тегу img -->
-    <picture>
-      <!-- <source srcset="" media="" type="" sizes=""  /> -->
-      <!-- <img src="" alt="" /> -->
-      <source
-        srcset="
-          ./assets/imgs/team/work3.webp    1x,
-          ./assets/imgs/team/work3-2x.webp 2x,
-          ./assets/imgs/team/work3-3x.webp 3x
-        "
-        type="image/webp"
-      />
-
-      <img src="./assets/imgs/team/work3.webp" alt="" />
-    </picture>
+    <ul class="list">
+      <li>
+        <picture>
+          <source
+            srcset="
+              ./assets/imgs/partfolio/img1-desktop-1x.webp 1x,
+              ./assets/imgs/partfolio/img1-desktop-2x.webp 2x,
+              ./assets/imgs/partfolio/img1-desktop-3x.webp 3x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./assets/imgs/partfolio/img1-tablet-1x.webp 1x,
+              ./assets/imgs/partfolio/img1-tablet-2x.webp 2x,
+              ./assets/imgs/partfolio/img1-tablet-3x.webp 3x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./assets/imgs/partfolio/img1-mobile-1x.webp 1x,
+              ./assets/imgs/partfolio/img1-mobile-2x.webp 2x,
+              ./assets/imgs/partfolio/img1-mobile-3x.webp 3x
+            "
+            media="(min-width:0px)"
+          />
+          <img src="./assets/imgs/partfolio/img1-mobile-1x.webp" alt="Навушники" />
+        </picture>
+      </li>
+    </ul>
   </body>
 </html>

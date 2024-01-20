@@ -9,5 +9,5 @@
   letter-spacing: 0.28px;
 }
 .link.active::after {
-  @extend %active;
+  // @extend %active;
 }
