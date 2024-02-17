@@ -1,153 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <style></style>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link:css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <!-- розмітка має складатись з трьох основних частин
-    1) Контейнер який вам потрібен
-    2)Рядки(скільки вам необхідно)
-    3)Колонки(скільки вам потрібно)
-    -->
-    <section>
-      <div class="container">
-        <!-- row = display:flex; Постановка дитячих елемпнтів у рядок -->
-
-        <!--  -->
-        <ul
-          class="row justify-content-center text-center mb-5"
-          style="margin-bottom: 20px !important"
-        >
-          <!--col - column - визначає кількість стовбчиків яку буде займати елемент -->
-          <!-- всього стовбчиків 12 -->
-          <!-- При Адаптації можете визначити скількі стовбчиків займає який елемент -->
-          <li class="col align-self-center">
-            <div class="card" style="width: 18rem">
-              <img src="./img.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="col align-self-center">
-            <div class="card" style="width: 18rem">
-              <img src="./img.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-              </div>
-            </div>
-          </li>
-          <lik class="col align-self-center">
-            <div class="card" style="width: 18rem">
-              <img src="./img.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-              </div>
-            </div>
-          </lik>
+    <header>
+      <a href="logo"><img class="img-fluid" src="" alt="" /></a>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="">asd</a></li>
+          <li class="nav-item"><a class="nav-link" href="">zxc</a></li>
+          <li class="nav-item"><a class="nav-link" href="">qwe</a></li>
         </ul>
-        <div class="row justify-content-center text-center">
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img src="./img.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img src="./img.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img src="./img.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center text-center">
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img src="./img.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img src="./img.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img src="./img.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the
-                  card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+      </nav>
+    </header>
   </body>
 </html>
