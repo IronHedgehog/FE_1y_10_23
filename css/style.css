@@ -1,0 +1,22 @@
+.box {
+  margin: 0 auto;
+  width: 200px;
+  height: 300px;
+  background-color: red;
+  transform: scale(1) translate(-100%);
+  transition: transform 1s linear;
+}
+.box:hover, .box:active, .box:focus {
+  transform: scale(1.2) translate(0);
+  background-color: blue;
+}
+@media screen and (min-width: 768px) {
+  .box {
+    background-color: aqua;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box {
+    background-color: blue;
+  }
+}
