@@ -2,46 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- viewport - область перегляду -->
-    <!-- width - ширина -->
-    <!-- height - висота -->
-    <!-- vw - viewport width -ширина області перегляду-->
-    <!-- vh - viewport height - висота області перегляду -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <ul class="list">
-      <li>
-        <picture>
-          <source
-            srcset="
-              ./assets/imgs/partfolio/img1-desktop-1x.webp 1x,
-              ./assets/imgs/partfolio/img1-desktop-2x.webp 2x,
-              ./assets/imgs/partfolio/img1-desktop-3x.webp 3x
-            "
-            media="(min-width:1200px)"
-          />
-          <source
-            srcset="
-              ./assets/imgs/partfolio/img1-tablet-1x.webp 1x,
-              ./assets/imgs/partfolio/img1-tablet-2x.webp 2x,
-              ./assets/imgs/partfolio/img1-tablet-3x.webp 3x
-            "
-            media="(min-width:768px)"
-          />
-          <source
-            srcset="
-              ./assets/imgs/partfolio/img1-mobile-1x.webp 1x,
-              ./assets/imgs/partfolio/img1-mobile-2x.webp 2x,
-              ./assets/imgs/partfolio/img1-mobile-3x.webp 3x
-            "
-            media="(min-width:0px)"
-          />
-          <img src="./assets/imgs/partfolio/img1-mobile-1x.webp" alt="Навушники" />
-        </picture>
+    <!-- grid у застосуванні === flexbox -->
+    <ul class="list first">
+      <li class="list-item dwa">
+        <img src="" alt="" />
       </li>
+      <li class="list-item tri"></li>
+      <li class="list-item che"></li>
+      <li class="list-item piat"></li>
+      <li class="list-item shest"></li>
+      <li class="list-item sem"></li>
     </ul>
   </body>
 </html>

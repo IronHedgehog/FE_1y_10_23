@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.list {
+  /* display: flex; */
+  display: grid;
+  /* Створення необхідної  кількості колонок  */
+  /* grid-template-columns: repeat(2, 200px); */
+  /* 1fr - це відносна одиниця яка відповідає за розподіл простору всередені грід сітки. Розподіляє ширину між усіма елементами порівну */
+  grid-template-columns: repeat(2, 151px);
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: 33.3% 33.3% 33.3%; */
+  /* grid-template-columns: 200px 200px 200px 200px 200px 200px 200px 200px; */
+  /* Створення необхідної  кількості рядків  */
+  grid-template-rows: repeat(4, 100px);
+  /* grid-template-rows: minmax(100px 200px); */
+
+  /* row-gap: 20px;
+  column-gap: 20px; */
+  /* gap = margin(зовнішні відступи) у світі грідів */
+  gap: 15px 20px;
+}
+
+.list-item {
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* span кількість секцій(ячейок) яку буде займати елемент */
+.dwa {
+  /* до куди може розширитись мій елемент */
+  /* я віддаю картинці 1-2 рядок */
+  grid-row-start: span 2;
+  background-image: url(./imgs/Image\ 7.png);
+}
+.che {
+  /* я віддаю картинці 2-3 рядок */
+  grid-row-start: span 2;
+  background-image: url(./imgs/Image\ 7.png);
+}
+.tri {
+  background-image: url(./imgs/Image\ 8.png);
+}
+.piat {
+  background-image: url(./imgs/Image\ 8.png);
+}
+.shest {
+  background-image: url(./imgs/Image\ 02.png);
+}
+
+.sem {
+  background-image: url(./imgs/Image\ 02.png);
+}
