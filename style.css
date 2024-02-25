@@ -41,23 +41,23 @@ ol {
   /* до куди може розширитись мій елемент */
   /* я віддаю картинці 1-2 рядок */
   grid-row-start: span 2;
-  background-image: url(./imgs/Image\ 7.png);
+  /* background-image: url(./imgs/Image\ 7.png); */
 }
 .che {
   /* я віддаю картинці 2-3 рядок */
   grid-row-start: span 2;
-  background-image: url(./imgs/Image\ 7.png);
+  /* background-image: url(./imgs/Image\ 7.png); */
 }
 .tri {
-  background-image: url(./imgs/Image\ 8.png);
+  /* background-image: url(./imgs/Image\ 8.png); */
 }
 .piat {
-  background-image: url(./imgs/Image\ 8.png);
+  /* background-image: url(./imgs/Image\ 8.png); */
 }
 .shest {
-  background-image: url(./imgs/Image\ 02.png);
+  /* background-image: url(./imgs/Image\ 02.png); */
 }
 
 .sem {
-  background-image: url(./imgs/Image\ 02.png);
+  /* background-image: url(./imgs/Image\ 02.png); */
 }
